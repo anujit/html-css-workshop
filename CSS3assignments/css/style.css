@@ -1,3 +1,52 @@
+/*reset css*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration:none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
 @font-face{
 	font-family: 'roboto-regular';
 	src: url('../fonts/roboto-regular-webfont.eot');
@@ -63,9 +112,22 @@ header{
 	font-family:'roboto-regular', serif, monospace;
 }
 
-header li{
+nav.top-nav li, nav.footer-nav li{
 	display:inline;
 	margin:15px;
+	color:#e5e5e5;
+	line-height:29px;
+}
+
+header a {
+	text-decoration:none;
+	color:#e5e5e5;
+}
+
+nav.top-nav{
+	height:30px;
+	background-color: #8a807a;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7d726c), to(#e5e2e1));
 }
 
 .logo-wrap, .banner-wrap{
@@ -76,13 +138,62 @@ header li{
 	float:right;
 }
 
+.main-wrapper{
+	position:relative;
+	margin:10px;
+}
+
+.main-content{
+	width:800px;
+	float:left;
+}
+
+.right-nav{
+	position:absolute;
+	right:195px;
+}
+
+.right-nav li{
+    margin: 5px;
+    border-bottom: 1px dotted gray;
+    width: 169px;
+    text-align: left;
+    height: 28px;
+    padding: 5px;
+	line-height:23px;
+}
+
+.caption-wrap{
+	margin:15px;
+}
+
+.caption-wrap article{
+	margin:15px;
+}
+
+figcaption{
+	text-align:center;
+}
+
 footer{
 	position: relative;
     clear: both;
     width: auto;
-    height: 350px;
+    height: 390px;
     background: #333333;
 	font-family:'roboto-light', serif, monospace;
+}
+
+footer label, footer button{
+	display:block;
+}
+
+footer button{
+	margin-top:10px;
+	background-color: #337ab7;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#337ab7), to(#c1d7e9));	
+	font-size: 20px;
+    border-radius: 5px;
 }
 
 section{
@@ -91,10 +202,21 @@ section{
 
 figure img{
 	border-radius:50%;
+	filter:grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	transition: filter 2s;
+	-webkit-transition: -webkit-filter 2s;
+}
+
+figure img:hover{
+	filter:grayscale(0%);
+	-webkit-filter:grayscale(0%);
 }
 
 footer article{
 	color:#ababab;
+	float:left;
+	width:296px;
 }
 
 .copyright-info{
@@ -104,6 +226,11 @@ footer article{
     bottom: 0;
     left: 0;
     width: 100%;	
+	text-align:center;
+}
+
+.copyright-div{
+	color:#e5e5e5;
 }
 
 .footer-links{
