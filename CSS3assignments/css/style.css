@@ -1,0 +1,71 @@
+@font-face{
+	font-family: 'roboto-regular';
+	src: url('../fonts/roboto-regular-webfont.eot');
+	src: url('../fonts/roboto-regular-webfont.woff') format('woff');
+}
+
+@font-face{
+	font-family: 'roboto-light' ;
+	src: url('../fonts/roboto-light-webfont.eot');
+	src: url('../fonts/roboto-light-webfont.woff') format('woff');	
+}
+
+.image-gallery{
+	float:left;
+}
+
+header{
+	position:relative;
+	max-width:900px;
+	max-width:900px;
+	margin:0 auto 20px auto;
+	font-family:'roboto-regular', serif, monospace;
+}
+
+header li{
+	display:inline;
+	margin:15px;
+}
+
+.logo-wrap, .banner-wrap{
+	float:left;
+}
+
+footer{
+	position: relative;
+    clear: both;
+    width: auto;
+    height: 350px;
+    background: #333333;
+	font-family:'roboto-light', serif, monospace;
+}
+
+section{
+	font-family:'roboto-light', serif, monospace;
+}
+
+footer article{
+	color:#ababab;
+}
+
+.copyright-info{
+    background: #1D1D1D;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;	
+}
+
+.footer-links{
+    line-height: 25px;
+    margin: 0 auto;
+    padding-top: 30px;
+    width: auto;
+    max-width: 900px;
+    font-size: 14px;	
+}
+
+.clearfix{
+	clear:both;
+}

@@ -1,6 +1,7 @@
 <html>
 	<head>
-		<title>Assignment 1</title>
+		<title>Assignment 2</title>
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<div class="main-wrapper">
@@ -8,8 +9,9 @@
 			<!--logo,banner and top nav-->
 			
 			<header>
-				<img src="images/logo.jpg" />
-				<img src="images/banner.png" />
+				<div class="logo-wrap"><img src="images/logo.jpg" /></div>
+				<div class="banner-wrap"><img src="images/banner.png" /></div>
+				<div class="clearfix"></div>
 			<nav>
 			  <ul>
 				<li><a href="#">Home</a></li>
@@ -67,7 +69,7 @@
 			<!--images and captions-->
 			
 			<section>
-				<article>
+				<article class="image-gallery">
 					<figure>
 						<a>
 							<img src="images/resourse1.png"/>
@@ -77,7 +79,7 @@
 						<b>Caption 1</b>
 					</figcaption>
 				</article>
-				<article>
+				<article class="image-gallery">
 					<figure>
 						<a>
 							<img src="images/resourse2.png"/>
@@ -87,7 +89,7 @@
 						<b>Caption 2</b>
 					</figcaption>
 				</article>
-								<article>
+				<article class="image-gallery">
 					<figure>
 						<a>
 							<img src="images/resourse3.png"/>
@@ -101,7 +103,20 @@
 				
 			<!--footer-->
 			
-			<footer>
+			<footer>				
+				<section class="copyright-info">
+					<nav>
+						<ul>
+							<li>Site Map</li>
+							<li>Terms</li>
+							<li>Privacy</li>
+							<li>Disclaimer</li>
+						</ul>
+					</nav>
+					<div>
+						Copyright © 2016 ABC Inc. All rights reserved
+					</div>
+				</section>
 				<section class="footer-links">
 					<article class="our-services">
 						<h4>Our Services</h4>
@@ -134,19 +149,6 @@
 						</form>
 					</article>
 				</section>				
-				<section class="copyright-info">
-					<nav>
-						<ul>
-							<li>Site Map</li>
-							<li>Terms</li>
-							<li>Privacy</li>
-							<li>Disclaimer</li>
-						</ul>
-					</nav>
-					<div>
-						Copyright © 2016 ABC Inc. All rights reserved
-					</div>
-				</section>	
 			</footer>
 		</div>
 	</body>
