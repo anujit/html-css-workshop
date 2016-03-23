@@ -52,20 +52,36 @@ header a {
   color: #e5e5e5;
 }
 header nav {
-  height: 44px;
   background-color: #8a807a;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7d726c), to(#e5e2e1));
   text-align: center;
   line-height: 40px;
 }
+@media only screen and (min-device-width: 501px) {
+  header nav {
+    height: 44px;
+  }
+}
 header .logo-wrap,
 header .banner-wrap {
   float: left;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+  header .logo-wrap,
+  header .banner-wrap {
+    width: 100%;
+    text-align: center;
+  }
 }
 header .icons-wrap {
   float: right;
   margin: 10px;
   font-size: 35px;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+  header .icons-wrap {
+    display: none;
+  }
 }
 .main-wrapper {
   width: 1000px;
@@ -203,9 +219,13 @@ footer {
   position: relative;
   clear: both;
   width: auto;
-  height: 390px;
   background: #333333;
   font-family: 'roboto-light', serif, monospace;
+}
+@media only screen and (min-device-width: 501px) {
+  footer {
+    width: 390px;
+  }
 }
 footer label,
 footer button {
@@ -220,17 +240,31 @@ footer button {
 }
 footer article {
   color: #ababab;
-  float: left;
-  width: 296px;
+}
+@media only screen and (min-device-width: 501px) {
+  footer article {
+    float: left;
+    width: 296px;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+  footer h4 {
+    font-size: 50px;
+    margin-bottom: 36px;
+  }
 }
 footer .copyright-info {
   background: #1D1D1D;
-  height: 70px;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   text-align: center;
+}
+@media only screen and (min-device-width: 501px) {
+  footer .copyright-info {
+    height: 70px;
+  }
 }
 footer .copyright-info .copyright-div {
   color: #e5e5e5;
@@ -243,11 +277,19 @@ footer .footer-links {
   max-width: 900px;
   font-size: 14px;
 }
-nav li {
+li {
   display: inline;
   margin: 15px;
   color: #e5e5e5;
   line-height: 29px;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+  li {
+    width: 100%;
+    display: block;
+    height: 75px;
+    font-size: 40px;
+  }
 }
 .clearfix {
   clear: both;

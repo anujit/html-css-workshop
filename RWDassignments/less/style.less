@@ -62,7 +62,9 @@ header{
 	}
 	
 	nav{
-		height:44px;
+		@media only screen and (min-device-width : 501px) {
+			height:44px;
+		}
 		background-color: #8a807a;
 		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7d726c), to(#e5e2e1));
 		text-align:center;
@@ -71,12 +73,19 @@ header{
 	
 	.logo-wrap, .banner-wrap{
 		float:left;
+		@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+			width:100%;
+			text-align:center;
+		}		
 	}
 
 	.icons-wrap{
 		float:right;
 		margin:10px;
-		font-size:35px;		
+		font-size:35px;
+		@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+			display:none;
+		}		
 	}	
 }
 
@@ -207,7 +216,9 @@ footer{
 	position: relative;
     clear: both;
     width: auto;
-    height: 390px;
+    @media only screen and (min-device-width : 501px) {
+		width:390px;
+	}	
     background: #333333;
 	font-family:'roboto-light', serif, monospace;
 	label, button{
@@ -222,13 +233,25 @@ footer{
 	}
 	article{
 		color:#ababab;
-		float:left;
-		width:296px;
+		@media only screen and (min-device-width : 501px) {
+			float:left;
+			width:296px;
+		}		
 	}
-
+	
+	h4{
+		@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+			font-size:50px;
+			margin-bottom:36px;
+		}	
+	}
+	
 	.copyright-info{
 		background: #1D1D1D;
-		height: 70px;
+
+		@media only screen and (min-device-width : 501px) {
+			height: 70px;
+		}			
 		position: absolute;
 		bottom: 0;
 		left: 0;
@@ -250,11 +273,17 @@ footer{
 }
 
 
-nav li{
+li{
 	display:inline;
 	margin:15px;
 	color:#e5e5e5;
 	line-height:29px;
+	@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+		width:100%;
+		display:block;
+		height:75px;
+		font-size:40px;
+	}		
 }
 
 .clearfix{
