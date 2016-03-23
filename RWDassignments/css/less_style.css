@@ -44,7 +44,6 @@
 }
 header {
   position: relative;
-  max-width: 900px;
   margin: 0 auto 20px auto;
   font-family: 'roboto-regular', serif, monospace;
 }
@@ -53,9 +52,11 @@ header a {
   color: #e5e5e5;
 }
 header nav {
-  height: 30px;
+  height: 44px;
   background-color: #8a807a;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7d726c), to(#e5e2e1));
+  text-align: center;
+  line-height: 40px;
 }
 header .logo-wrap,
 header .banner-wrap {
@@ -63,30 +64,74 @@ header .banner-wrap {
 }
 header .icons-wrap {
   float: right;
+  margin: 10px;
+  font-size: 35px;
 }
 .main-wrapper {
+  width: 1000px;
   position: relative;
-  margin: 10px;
+  margin: auto;
 }
 .content-wrap {
   font-family: 'roboto-light', serif, monospace;
 }
 .main-content {
-  width: 800px;
+  width: 750px;
   float: left;
+}
+.main-content p {
+  margin-bottom: 10px;
+}
+.main-content p:last-child {
+  color: #3CA809;
+}
+.main-content h3 {
+  color: #ED2C1B;
+  font-weight: bold;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+  .main-content h3 {
+    color: green;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+  .main-content {
+    color: red;
+  }
 }
 .right-nav {
   position: absolute;
-  right: 195px;
+  right: 0px;
+}
+.right-nav .search-wrap {
+  margin: 10px 0px 25px 10px;
+  border: 1px solid red;
+}
+.right-nav .search-wrap button {
+  color: red;
+}
+.right-nav ul {
+  margin-left: 20px;
+}
+.right-nav li:first-child {
+  color: white;
+  background-color: darkgray;
+  height: 20px;
+  margin: 0px;
+  border: none;
 }
 .right-nav li {
   margin: 5px;
-  border-bottom: 1px dotted gray;
+  border-bottom: 1px dashed gray;
   width: 169px;
   text-align: left;
   height: 28px;
   padding: 5px;
   line-height: 23px;
+}
+.right-nav a {
+  color: darkgray;
+  font-weight: bold;
 }
 .caption-wrap {
   margin: 15px;
