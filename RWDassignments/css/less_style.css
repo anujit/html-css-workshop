@@ -231,6 +231,19 @@ footer {
     height: 390px;
   }
 }
+footer input {
+  height: 32px;
+  width: 230px;
+  border-radius: 17px;
+  background-color: lightgray;
+}
+footer .form-wrap {
+  margin: 4px;
+}
+footer label {
+  float: left;
+  width: 57px;
+}
 footer label,
 footer button {
   display: block;
@@ -241,6 +254,9 @@ footer button {
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#337ab7), to(#c1d7e9));
   font-size: 20px;
   border-radius: 5px;
+  width: 118px;
+  border-radius: 15px;
+  float: right;
 }
 footer article {
   color: #ababab;
