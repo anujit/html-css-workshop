@@ -139,21 +139,31 @@ nav.top-nav{
 	border:1px solid red;
 }
 
+.search-wrap button{
+	color:red;
+}
+
 .right-nav li:first-child{
     color: white;
     background-color: darkgray;
     height: 20px;
 	margin:0px;
+	border:none;
 }
 
 .right-nav li{
     margin: 5px;
-    border-bottom: 1px dotted gray;
+    border-bottom: 1px dashed gray;
     width: 169px;
     text-align: left;
     height: 28px;
     padding: 5px;
 	line-height:23px;
+}
+
+.right-nav a{
+	color:darkgray;
+	font-weight:bold;
 }
 
 .caption-wrap{
