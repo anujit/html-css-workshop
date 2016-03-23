@@ -152,7 +152,9 @@ header{
 	li:first-child{
 		color: white;
 		background-color: darkgray;
-		height: 60px;
+		@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+			height:60px;
+		}				
 		margin:0px;
 		border:none;	
 	}
@@ -217,7 +219,7 @@ footer{
     clear: both;
     width: auto;
     @media only screen and (min-device-width : 501px) {
-		width:390px;
+		height:390px;
 	}	
     background: #333333;
 	font-family:'roboto-light', serif, monospace;
@@ -273,7 +275,7 @@ footer{
 }
 
 
-li{
+nav li{
 	display:inline;
 	margin:15px;
 	color:#e5e5e5;

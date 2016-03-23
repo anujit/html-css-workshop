@@ -150,9 +150,13 @@ header .icons-wrap {
 .right-nav li:first-child {
   color: white;
   background-color: darkgray;
-  height: 60px;
   margin: 0px;
   border: none;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+  .right-nav li:first-child {
+    height: 60px;
+  }
 }
 .right-nav li {
   margin: 5px;
@@ -224,7 +228,7 @@ footer {
 }
 @media only screen and (min-device-width: 501px) {
   footer {
-    width: 390px;
+    height: 390px;
   }
 }
 footer label,
@@ -277,14 +281,14 @@ footer .footer-links {
   max-width: 900px;
   font-size: 14px;
 }
-li {
+nav li {
   display: inline;
   margin: 15px;
   color: #e5e5e5;
   line-height: 29px;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
-  li {
+  nav li {
     width: 100%;
     display: block;
     height: 75px;
