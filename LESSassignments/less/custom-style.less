@@ -152,28 +152,21 @@ header{
 		margin-left:20px;
 	}
 	li:first-child{
+		.list-item();
 		color: white;
 		background-color: darkgray;
 		@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
 			height:60px;
 		}				
 		margin:0px;
-		border:none;	
+		border:none;
 	}
+	
 	li{
-		@media only screen and (min-device-width : 501px) {
-			width: 169px;
-		}
-		margin: 5px;
-		border-bottom: 1px dashed gray;
-		text-align: left;
-		height: 28px;
-		padding: 5px;
-		line-height:23px;
-		@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
-			height:60px;
-		}		
+		.list-item();
+		border-bottom:1px dashed gray;
 	}
+	
 	a{
 		color:darkgray;
 		font-weight:bold;	
@@ -278,6 +271,7 @@ footer{
 
 
 nav li{
+	.list-item();
 	display:inline;
 	margin:15px;
 	color:#e5e5e5;

@@ -1,6 +1,23 @@
 /**less*/
 /*variable.less*/
 /*mixin.less*/
+.list-item {
+  margin: 5px;
+  text-align: left;
+  height: 28px;
+  padding: 5px;
+  line-height: 23px;
+}
+@media only screen and (min-device-width: 501px) {
+  .list-item {
+    width: 169px;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+  .list-item {
+    height: 60px;
+  }
+}
 @font-face {
   font-family: 'roboto-regular';
   src: url('../fonts/roboto-regular-webfont.eot');
@@ -150,10 +167,25 @@ header .icons-wrap {
   margin-left: 20px;
 }
 .right-nav li:first-child {
+  margin: 5px;
+  text-align: left;
+  height: 28px;
+  padding: 5px;
+  line-height: 23px;
   color: white;
   background-color: darkgray;
   margin: 0px;
   border: none;
+}
+@media only screen and (min-device-width: 501px) {
+  .right-nav li:first-child {
+    width: 169px;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+  .right-nav li:first-child {
+    height: 60px;
+  }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
   .right-nav li:first-child {
@@ -162,11 +194,11 @@ header .icons-wrap {
 }
 .right-nav li {
   margin: 5px;
-  border-bottom: 1px dashed gray;
   text-align: left;
   height: 28px;
   padding: 5px;
   line-height: 23px;
+  border-bottom: 1px dashed gray;
 }
 @media only screen and (min-device-width: 501px) {
   .right-nav li {
@@ -284,10 +316,25 @@ footer .footer-links {
   font-size: 14px;
 }
 nav li {
+  margin: 5px;
+  text-align: left;
+  height: 28px;
+  padding: 5px;
+  line-height: 23px;
   display: inline;
   margin: 15px;
   color: #e5e5e5;
   line-height: 29px;
+}
+@media only screen and (min-device-width: 501px) {
+  nav li {
+    width: 169px;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+  nav li {
+    height: 60px;
+  }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
   nav li {
