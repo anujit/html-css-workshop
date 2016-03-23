@@ -96,19 +96,37 @@ header .icons-wrap {
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
   .main-content {
+    width: 100%;
+    float: left;
     color: red;
   }
 }
-.right-nav {
-  position: absolute;
-  right: 0px;
+@media only screen and (min-device-width: 501px) {
+  .right-nav {
+    position: absolute;
+    right: 0px;
+  }
 }
 .right-nav .search-wrap {
   margin: 10px 0px 25px 10px;
   border: 1px solid red;
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+  .right-nav .search-wrap input {
+    width: 75%;
+    font-size: 29px;
+    height: 60px;
+  }
+}
 .right-nav .search-wrap button {
   color: red;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+  .right-nav .search-wrap button {
+    width: 25%;
+    font-size: 29px;
+    height: 60px;
+  }
 }
 .right-nav ul {
   margin-left: 20px;
@@ -116,22 +134,37 @@ header .icons-wrap {
 .right-nav li:first-child {
   color: white;
   background-color: darkgray;
-  height: 20px;
+  height: 60px;
   margin: 0px;
   border: none;
 }
 .right-nav li {
   margin: 5px;
   border-bottom: 1px dashed gray;
-  width: 169px;
   text-align: left;
   height: 28px;
   padding: 5px;
   line-height: 23px;
 }
+@media only screen and (min-device-width: 501px) {
+  .right-nav li {
+    width: 169px;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+  .right-nav li {
+    height: 60px;
+  }
+}
 .right-nav a {
   color: darkgray;
   font-weight: bold;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+  .right-nav {
+    width: 100%;
+    float: left;
+  }
 }
 .caption-wrap {
   margin: 15px;
@@ -147,12 +180,24 @@ header .icons-wrap {
   transition: filter 2s;
   -webkit-transition: -webkit-filter 2s;
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+  .caption-wrap .image-gallery figure img {
+    height: 200px;
+  }
+}
 .caption-wrap .image-gallery figure img:hover {
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
 }
 .caption-wrap .image-gallery figcaption {
   text-align: center;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+  .caption-wrap .image-gallery {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+  }
 }
 footer {
   position: relative;
