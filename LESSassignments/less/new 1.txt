@@ -1,0 +1,2 @@
+/*custom-style.less*/
+@import "variable.less"

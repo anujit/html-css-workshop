@@ -1,0 +1,9 @@
+/*custom-style.less*/
+/*variable.less*/
+.variable {
+  color: red;
+}
+/*mixin.less*/
+.mixin {
+  color: blue;
+}

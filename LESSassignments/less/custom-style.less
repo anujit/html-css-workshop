@@ -1,0 +1,295 @@
+/**less*/
+@import "variable.less";
+@import "mixin.less";
+
+@font-face{
+	font-family: 'roboto-regular';
+	src: url('../fonts/roboto-regular-webfont.eot');
+	src: url('../fonts/roboto-regular-webfont.woff') format('woff');
+}
+
+@font-face{
+	font-family: 'roboto-light' ;
+	src: url('../fonts/roboto-light-webfont.eot');
+	src: url('../fonts/roboto-light-webfont.woff') format('woff');	
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?3xd05l');
+    src:    url('../fonts/icomoon.eot?3xd05l#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?3xd05l') format('truetype'),
+        url('../fonts/icomoon.woff?3xd05l') format('woff'),
+        url('../fonts/icomoon.svg?3xd05l#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrows_rotate_anti_dashed:before {
+    content: "\e903";
+}
+.icon-arrows_right_double-31:before {
+    content: "\e900";
+}
+.icon-arrows_question:before {
+    content: "\e901";
+}
+.icon-arrows_plus:before {
+    content: "\e902";
+}
+
+header{
+	position:relative;
+	margin:0 auto 20px auto;
+	font-family: @header-font;
+	
+	a{
+		text-decoration:none;
+		color: @nav-link-color;	
+	}
+	
+	nav{
+		@media only screen and (min-device-width : 501px) {
+			height: @nav-mobile-height;
+		}
+		background-color: @nav-background-color;
+		background: @nav-background;
+		text-align: center;
+		line-height: 40px;		
+	}
+	
+	.logo-wrap, .banner-wrap{
+		float:left;
+		@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+			width:100%;
+			text-align:center;
+		}		
+	}
+
+	.icons-wrap{
+		float:right;
+		margin:10px;
+		font-size:35px;
+		@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+			display:none;
+		}		
+	}	
+}
+
+.main-wrapper{
+	width:1000px;
+	position:relative;
+	margin:auto;
+}
+
+.content-wrap{
+	font-family: @main-content-font;
+}
+
+.main-content{
+	width:750px;
+	float:left;
+	p{
+		margin-bottom:10px;
+	}
+	p:last-child{
+		color:#3CA809;
+	}
+	h3{
+		color:#ED2C1B;
+		font-weight:bold;	
+		@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+			color:green;
+		}
+	}
+	@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+		width:100%;
+		float:left;
+		color:red;
+	}	
+}
+
+.right-nav{
+	@media only screen and (min-device-width : 501px) {
+		position:absolute;
+		right:0px;	
+	}
+	.search-wrap{
+		margin:10px 0px 25px 10px;
+		border:1px solid red;
+		input{
+			@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+				width:75%;
+				font-size:29px;
+				height:60px;
+			}		
+		}
+		button{
+			color:red;
+			@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+				width:25%;
+				font-size:29px;
+				height:60px;
+			}				
+		}		
+	}	
+	ul{
+		margin-left:20px;
+	}
+	li:first-child{
+		color: white;
+		background-color: darkgray;
+		@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+			height:60px;
+		}				
+		margin:0px;
+		border:none;	
+	}
+	li{
+		@media only screen and (min-device-width : 501px) {
+			width: 169px;
+		}
+		margin: 5px;
+		border-bottom: 1px dashed gray;
+		text-align: left;
+		height: 28px;
+		padding: 5px;
+		line-height:23px;
+		@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+			height:60px;
+		}		
+	}
+	a{
+		color:darkgray;
+		font-weight:bold;	
+	}
+	@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+		width:100%;
+		float:left;
+	}	
+}
+
+
+.caption-wrap{
+	margin:15px;
+	.image-gallery{
+		float:left;
+		margin:15px;
+		figure img{
+			border-radius:50%;
+			filter:grayscale(100%);
+			-webkit-filter: grayscale(100%);
+			transition: filter 2s;
+			-webkit-transition: -webkit-filter 2s;
+			@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+				height:200px;
+			}					
+		}
+
+		figure img:hover{
+			filter:grayscale(0%);
+			-webkit-filter:grayscale(0%);
+		}		
+		figcaption{
+			text-align:center;
+		}		
+		@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+			width:100%;
+			text-align:center;
+			font-size:40px;
+		}			
+	}
+}
+
+footer{
+	position: relative;
+    clear: both;
+    width: auto;
+    @media only screen and (min-device-width : 501px) {
+		height:390px;
+	}	
+    background: #333333;
+	font-family:'roboto-light', serif, monospace;
+	label, button{
+		display:block;
+	}
+	button{
+		margin-top:10px;
+		background-color: #337ab7;
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#337ab7), to(#c1d7e9));	
+		font-size: 20px;
+		border-radius: 5px;
+	}
+	article{
+		color:#ababab;
+		@media only screen and (min-device-width : 501px) {
+			float:left;
+			width:296px;
+		}		
+	}
+	
+	h4{
+		@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+			font-size:50px;
+			margin-bottom:36px;
+		}	
+	}
+	
+	.copyright-info{
+		background: #1D1D1D;
+
+		@media only screen and (min-device-width : 501px) {
+			height: 70px;
+		}			
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;	
+		text-align:center;
+		.copyright-div{
+			color:#e5e5e5;
+		}		
+	}
+
+	.footer-links{
+		line-height: 25px;
+		margin: 0 auto;
+		padding-top: 30px;
+		width: auto;
+		max-width: 900px;
+		font-size: 14px;	
+	}	
+}
+
+
+nav li{
+	display:inline;
+	margin:15px;
+	color:#e5e5e5;
+	line-height:29px;
+	@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+		width:100%;
+		display:block;
+		height:75px;
+		font-size:40px;
+	}		
+}
+
+.clearfix{
+	clear:both;
+}
