@@ -1,4 +1,11 @@
 /**less*/
+.list-item {
+  margin: 5px;
+  text-align: left;
+  height: 28px;
+  padding: 5px;
+  line-height: 23px;
+}
 @font-face {
   font-family: 'roboto-regular';
   src: url('../fonts/roboto-regular-webfont.eot');
@@ -57,7 +64,7 @@ header nav {
   text-align: center;
   line-height: 40px;
 }
-@media only screen and (min-device-width: 501px) {
+@media only screen and (min-width: 501px) {
   header nav {
     height: 44px;
   }
@@ -66,7 +73,7 @@ header .logo-wrap,
 header .banner-wrap {
   float: left;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+@media only screen and (min-width: 320px) and (max-width: 500px) {
   header .logo-wrap,
   header .banner-wrap {
     width: 100%;
@@ -78,15 +85,26 @@ header .icons-wrap {
   margin: 10px;
   font-size: 35px;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+@media only screen and (min-width: 320px) and (max-width: 500px) {
   header .icons-wrap {
     display: none;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  header .banner-wrap img {
+    width: 100%;
+    text-align: center;
   }
 }
 .main-wrapper {
   width: 1000px;
   position: relative;
   margin: auto;
+}
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  .main-wrapper {
+    width: 100%;
+  }
 }
 .content-wrap {
   font-family: 'roboto-light', serif, monospace;
@@ -105,19 +123,19 @@ header .icons-wrap {
   color: #ED2C1B;
   font-weight: bold;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+@media only screen and (min-width: 320px) and (max-width: 500px) {
   .main-content h3 {
     color: green;
   }
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+@media only screen and (min-width: 320px) and (max-width: 500px) {
   .main-content {
     width: 100%;
     float: left;
     color: red;
   }
 }
-@media only screen and (min-device-width: 501px) {
+@media only screen and (min-width: 501px) {
   .right-nav {
     position: absolute;
     right: 0px;
@@ -127,60 +145,60 @@ header .icons-wrap {
   margin: 10px 0px 25px 10px;
   border: 1px solid red;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+@media only screen and (min-width: 320px) and (max-width: 500px) {
   .right-nav .search-wrap input {
     width: 75%;
-    font-size: 29px;
-    height: 60px;
+    font-size: 23px;
+    height: 44px;
   }
 }
 .right-nav .search-wrap button {
   color: red;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+@media only screen and (min-width: 320px) and (max-width: 500px) {
   .right-nav .search-wrap button {
     width: 25%;
-    font-size: 29px;
-    height: 60px;
+    font-size: 23px;
+    height: 44px;
   }
 }
 .right-nav ul {
   margin-left: 20px;
 }
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  .right-nav ul {
+    margin-left: 0px;
+  }
+}
 .right-nav li:first-child {
+  margin: 5px;
+  text-align: left;
+  height: 28px;
+  padding: 5px;
+  line-height: 23px;
   color: white;
   background-color: darkgray;
   margin: 0px;
   border: none;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+@media only screen and (min-width: 320px) and (max-width: 500px) {
   .right-nav li:first-child {
-    height: 60px;
+    height: 33px;
   }
 }
 .right-nav li {
   margin: 5px;
-  border-bottom: 1px dashed gray;
   text-align: left;
   height: 28px;
   padding: 5px;
   line-height: 23px;
-}
-@media only screen and (min-device-width: 501px) {
-  .right-nav li {
-    width: 169px;
-  }
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
-  .right-nav li {
-    height: 60px;
-  }
+  border-bottom: 1px dashed gray;
 }
 .right-nav a {
   color: darkgray;
   font-weight: bold;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+@media only screen and (min-width: 320px) and (max-width: 500px) {
   .right-nav {
     width: 100%;
     float: left;
@@ -200,9 +218,9 @@ header .icons-wrap {
   transition: filter 2s;
   -webkit-transition: -webkit-filter 2s;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+@media only screen and (min-width: 320px) and (max-width: 500px) {
   .caption-wrap .image-gallery figure img {
-    height: 200px;
+    height: 125px;
   }
 }
 .caption-wrap .image-gallery figure img:hover {
@@ -212,11 +230,11 @@ header .icons-wrap {
 .caption-wrap .image-gallery figcaption {
   text-align: center;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+@media only screen and (min-width: 320px) and (max-width: 500px) {
   .caption-wrap .image-gallery {
     width: 100%;
     text-align: center;
-    font-size: 40px;
+    font-size: 25px;
   }
 }
 footer {
@@ -226,23 +244,10 @@ footer {
   background: #333333;
   font-family: 'roboto-light', serif, monospace;
 }
-@media only screen and (min-device-width: 501px) {
+@media only screen and (min-width: 501px) {
   footer {
     height: 390px;
   }
-}
-footer input {
-  height: 32px;
-  width: 230px;
-  border-radius: 17px;
-  background-color: lightgray;
-}
-footer .form-wrap {
-  margin: 4px;
-}
-footer label {
-  float: left;
-  width: 57px;
 }
 footer label,
 footer button {
@@ -258,36 +263,43 @@ footer button {
   border-radius: 15px;
   float: right;
 }
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  footer button {
+    float: left;
+    margin: 10px;
+  }
+}
 footer article {
   color: #ababab;
 }
-@media only screen and (min-device-width: 501px) {
+@media only screen and (min-width: 501px) {
   footer article {
     float: left;
     width: 296px;
   }
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+@media only screen and (min-width: 320px) and (max-width: 500px) {
   footer h4 {
-    font-size: 50px;
-    margin-bottom: 36px;
+    font-size: 21px;
+    margin-bottom: 10px;
   }
 }
 footer .copyright-info {
   background: #1D1D1D;
-  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   text-align: center;
 }
-@media only screen and (min-device-width: 501px) {
+@media only screen and (min-width: 501px) {
   footer .copyright-info {
     height: 70px;
+    position: absolute;
   }
 }
 footer .copyright-info .copyright-div {
   color: #e5e5e5;
+  margin-top: 5px;
 }
 footer .footer-links {
   line-height: 25px;
@@ -297,18 +309,41 @@ footer .footer-links {
   max-width: 900px;
   font-size: 14px;
 }
+footer input {
+  height: 32px;
+  width: 230px;
+  border-radius: 17px;
+  background-color: lightgray;
+}
+footer .form-wrap {
+  margin: 4px;
+}
+footer label {
+  float: left;
+  width: 57px;
+}
+footer .footer-nav li {
+  display: inline;
+  height: 18px;
+  font-size: 16px;
+  margin: 5px;
+}
 nav li {
+  margin: 5px;
+  text-align: left;
+  height: 28px;
+  padding: 5px;
+  line-height: 23px;
   display: inline;
   margin: 15px;
   color: #e5e5e5;
   line-height: 29px;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+@media only screen and (min-width: 320px) and (max-width: 500px) {
   nav li {
-    width: 100%;
     display: block;
-    height: 75px;
-    font-size: 40px;
+    height: 40px;
+    font-size: 28px;
   }
 }
 .clearfix {

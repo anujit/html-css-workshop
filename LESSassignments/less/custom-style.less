@@ -64,7 +64,7 @@ header{
 	}
 	
 	nav{
-		@media only screen and (min-device-width : 501px) {
+		@media only screen and (min-width : 501px) {
 			height: @nav-mobile-height;
 		}
 		background-color: @nav-background-color;
@@ -75,7 +75,7 @@ header{
 	
 	.logo-wrap, .banner-wrap{
 		float:left;
-		@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+		@media only screen and (min-width : 320px) and (max-width : 500px) {
 			width:100%;
 			text-align:center;
 		}		
@@ -85,16 +85,28 @@ header{
 		float:right;
 		margin:10px;
 		font-size:35px;
-		@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+		@media only screen and (min-width : 320px) and (max-width : 500px) {
 			display:none;
 		}		
-	}	
+	}
+	
+	.banner-wrap{
+		img{
+			@media only screen and (min-width : 320px) and (max-width : 500px) {
+				width:100%;
+				text-align:center;
+			}			
+		}
+	}
 }
 
 .main-wrapper{
 	width:1000px;
 	position:relative;
 	margin:auto;
+	@media only screen and (min-width : 320px) and (max-width : 500px) {
+		width:100%;
+	}			
 }
 
 .content-wrap{
@@ -113,11 +125,11 @@ header{
 	h3{
 		color:#ED2C1B;
 		font-weight:bold;	
-		@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+		@media only screen and (min-width : 320px) and (max-width : 500px) {
 			color:green;
 		}
 	}
-	@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+	@media only screen and (min-width : 320px) and (max-width : 500px) {
 		width:100%;
 		float:left;
 		color:red;
@@ -125,7 +137,7 @@ header{
 }
 
 .right-nav{
-	@media only screen and (min-device-width : 501px) {
+	@media only screen and (min-width : 501px) {
 		position:absolute;
 		right:0px;	
 	}
@@ -133,30 +145,33 @@ header{
 		margin:10px 0px 25px 10px;
 		border:1px solid red;
 		input{
-			@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+			@media only screen and (min-width : 320px) and (max-width : 500px) {
 				width:75%;
-				font-size:29px;
-				height:60px;
+				font-size:23px;
+				height:44px;
 			}		
 		}
 		button{
 			color:red;
-			@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+			@media only screen and (min-width : 320px) and (max-width : 500px) {
 				width:25%;
-				font-size:29px;
-				height:60px;
-			}				
+				font-size:23px;
+				height:44px;
+			}
 		}		
 	}	
 	ul{
 		margin-left:20px;
+		@media only screen and (min-width : 320px) and (max-width : 500px) {
+			margin-left:0px;
+		}		
 	}
 	li:first-child{
 		.list-item();
 		color: white;
 		background-color: darkgray;
-		@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
-			height:60px;
+		@media only screen and (min-width : 320px) and (max-width : 500px) {
+			height:33px;
 		}				
 		margin:0px;
 		border:none;
@@ -171,7 +186,7 @@ header{
 		color:darkgray;
 		font-weight:bold;	
 	}
-	@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+	@media only screen and (min-width : 320px) and (max-width : 500px) {
 		width:100%;
 		float:left;
 	}	
@@ -189,8 +204,8 @@ header{
 			-webkit-filter: grayscale(100%);
 			transition: filter 2s;
 			-webkit-transition: -webkit-filter 2s;
-			@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
-				height:200px;
+			@media only screen and (min-width : 320px) and (max-width : 500px) {
+				height:125px;
 			}					
 		}
 
@@ -201,10 +216,10 @@ header{
 		figcaption{
 			text-align:center;
 		}		
-		@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+		@media only screen and (min-width : 320px) and (max-width : 500px) {
 			width:100%;
 			text-align:center;
-			font-size:40px;
+			font-size:25px;
 		}			
 	}
 }
@@ -213,7 +228,7 @@ footer{
 	position: relative;
     clear: both;
     width: auto;
-    @media only screen and (min-device-width : 501px) {
+    @media only screen and (min-width : 501px) {
 		height:390px;
 	}	
     background: #333333;
@@ -230,35 +245,40 @@ footer{
 		width:118px;
 		border-radius:15px;
 		float:right;
+		@media only screen and (min-width : 320px) and (max-width : 500px) {
+			float:left;
+			margin:10px;
+		}			
 	}
 	article{
 		color:#ababab;
-		@media only screen and (min-device-width : 501px) {
+		@media only screen and (min-width : 501px) {
 			float:left;
 			width:296px;
 		}		
 	}
 	
 	h4{
-		@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
-			font-size:50px;
-			margin-bottom:36px;
+		@media only screen and (min-width : 320px) and (max-width : 500px) {
+			font-size:21px;
+			margin-bottom:10px;
 		}	
 	}
 	
 	.copyright-info{
 		background: #1D1D1D;
 
-		@media only screen and (min-device-width : 501px) {
+		@media only screen and (min-width : 501px) {
 			height: 70px;
-		}			
-		position: absolute;
+			position:absolute;
+		}
 		bottom: 0;
 		left: 0;
 		width: 100%;	
 		text-align:center;
 		.copyright-div{
 			color:#e5e5e5;
+			margin-top:5px;
 		}		
 	}
 
@@ -286,6 +306,15 @@ footer{
 		float:left;
 		width:57px;
 	}
+	
+	.footer-nav{
+		li{
+			display: inline;
+			height: 18px;
+			font-size: 16px;
+			margin: 5px;		
+		}
+	}
 }
 
 
@@ -295,11 +324,11 @@ nav li{
 	margin:15px;
 	color:#e5e5e5;
 	line-height:29px;
-	@media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
-		width:100%;
+	@media only screen and (min-width : 320px) and (max-width : 500px) {
+		
 		display:block;
-		height:75px;
-		font-size:40px;
+		height:40px;
+		font-size:28px;
 	}		
 }
 
