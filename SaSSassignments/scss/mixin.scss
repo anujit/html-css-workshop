@@ -1,0 +1,10 @@
+/*mixin.less*/
+	@mixin list-item(){
+
+		margin: 5px;
+		text-align: left;
+		height: 28px;
+		padding: 5px;
+		line-height:23px;
+	
+	}
